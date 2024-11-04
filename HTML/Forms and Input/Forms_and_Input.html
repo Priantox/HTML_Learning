@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ahamudul Hasan" />
+    <meta name="description" content="This page helps me to learn something new, something I will try my hard" />
+    <title>My first web page</title>
+    <link rel="icon" href="rdr2.png" type="image/x-icon" />
+    <!-- <link>: This is an HTML tag that connects different resources.-->
+    <link rel="stylesheet" href="Main.css" type="text/css" />
+</head>
+
+<body>
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you</p>
+
+        <form action="https://httpbin.org/get" method="get"> <!--from:user input--> <!--action: where to send-->
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
+                        autofocus>
+                </p>
+
+                <p>
+                    <label for="passwword">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Your secret" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+
+                <p>
+                    <label for="decade">Total years</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                </p>
+
+                <p>
+                    <label for="coffee">Favourite coffee</label>
+                    <select name="coffee" id="coffee" multiple size="5">
+
+                        <optgroup label="Coffee">
+                            <option value="regular">Regular coffee</option>
+                            <option value="icedtea" selected>Iced tea</option>
+                        </optgroup>
+
+                        <optgroup label="Others">
+                            <option value="latte">Latte</option>
+                            <option value="Browne">Browne</option>
+                            <option value="water">water</option>
+                            <option value="tea">Tea</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="coffee">Other coffee: </label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="Latte">
+                        <option value="Milk">
+                        <option value="Tea">
+                    </datalist>
+                </p>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Your favourite food</legend>
+                <p>
+                    <input type="radio" name="food" id="tacos" value="tacos">
+                    <!--Radio: appear as a round button on the form-->
+                    <label for="tacos">Tacos</label>
+                </p>
+
+                <p>
+                    <input type="radio" name="food" id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Do you have pets?</legend>
+
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Send your feedback</legend>
+                <label for="message">Your Message</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+            </fieldset>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </article>
+</body>

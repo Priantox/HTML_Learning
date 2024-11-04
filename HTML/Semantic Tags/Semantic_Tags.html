@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ahamudul Hasan" />
+    <meta name="description" content="This page helps me to learn something new, something I will try my hard" />
+    <title>My first web page</title>
+    <link rel="icon" href="rdr2.png" type="image/x-icon" />
+    <!-- <link>: This is an HTML tag that connects different resources.-->
+    <link rel="stylesheet" href="Background.css" type="text/css" />
+</head>
+
+<body>
+
+    <header> <!--It typically contains the site's logo, title, and navigation menus.-->
+        <h1>My website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gun"></a>Gun</li>
+            </ul>
+        </nav>
+    </header>
+
+    <footer> <!--information about the author, copyright details, or links to related documents.-->
+        <p>&copy; 2024 My website. All right reserved.</p>
+        <ul>
+            <li><a href="#privacy">Private policy</a></li>
+            <li><a href="Terms">Terms of service</a></li>
+        </ul>
+    </footer>
+
+    <article id="News-1"> <!--The <article> element is used for self-contained content that 
+        could stand alone outside the context of the website, 
+        like a news article or a blog post. The id attribute can 
+        be used to give it a unique identifier.-->
+        <h2>Breaking news: About html</h2>
+        <p>Today, a guy found new element about html</p>
+    </article>
+
+    <aside> <!--Related to the main-->
+        <h3>Related article</h3>
+        <ul>
+            <li><a href="#article">Basic css</a></li>
+        </ul>
+    </aside>
+
+    <details> <!--Additional information-->
+        <summary>
+            This section provides more detail. Guess how much I study
+            <mark>8 hours</mark> <!--It marks line-->
+        </summary>
+
+        <p>
+            Its starts in <time datetime="08:00">8 am</time>
+            <!--The <time> element is versatile and works independently to mark up dates,
+            times, and durations in any part of the HTML document—whether it's within <details>,
+            <article>, <footer>, or any other section-->
+        </p>
+    </details>
+
+    <p>Hello i will come <time datetime="23-02-2024">23 noon</time></p>
+
+    <main> <!--used to contain the primary content of a webpage.-->
+        <!--only appear once-->
+        <h2>Welcome to my channel</h2>
+    </main>
+
+</body>
